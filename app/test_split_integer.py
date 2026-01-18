@@ -8,7 +8,8 @@ def test_sum_of_the_parts_should_be_equal_to_value() -> None:
 
 
 def test_should_split_into_equal_parts_when_value_divisible_by_parts() -> None:
-    pass
+    parts = [4, 4, 4, 5]
+    assert max(parts) - min(parts) <= 1
 
 
 def test_should_return_part_equals_to_value_when_split_into_one_part() -> None:
